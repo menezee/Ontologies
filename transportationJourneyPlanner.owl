@@ -34,6 +34,9 @@
         <Class IRI="#CorredorDeOnibus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HorariosDoOnibus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Idoso"/>
     </Declaration>
     <Declaration>
@@ -67,6 +70,9 @@
         <Class IRI="#Terminal"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Timetable"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TransportePublico"/>
     </Declaration>
     <Declaration>
@@ -75,6 +81,9 @@
     <Declaration>
         <ObjectProperty IRI="#seLocomoveEm"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transportePassaEm"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Adulto"/>
         <Class IRI="#Passageiro"/>
@@ -82,16 +91,6 @@
     <SubClassOf>
         <Class IRI="#Bicicleta"/>
         <Class IRI="#TransportePublico"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bicicleta"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#podePararEm"/>
-            <ObjectUnionOf>
-                <Class IRI="#Rota"/>
-                <Class IRI="#Terminal"/>
-            </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bicicleta"/>
@@ -112,6 +111,10 @@
         <Class IRI="#Rua"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HorariosDoOnibus"/>
+        <Class IRI="#Timetable"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Idoso"/>
         <Class IRI="#Passageiro"/>
     </SubClassOf>
@@ -133,6 +136,13 @@
     <SubClassOf>
         <Class IRI="#Onibus"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#podePararEm"/>
+            <Class IRI="#PontoDeOnibus"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Onibus"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#seLocomoveEm"/>
             <Class IRI="#CorredorDeOnibus"/>
         </ObjectAllValuesFrom>
@@ -144,6 +154,13 @@
     <SubClassOf>
         <Class IRI="#PontoDeOnibus"/>
         <Class IRI="#Terminal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PontoDeOnibus"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#transportePassaEm"/>
+            <Class IRI="#HorariosDoOnibus"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PontoDeTaxi"/>
@@ -165,6 +182,20 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Terminal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#transportePassaEm"/>
+            <Class IRI="#Timetable"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportePublico"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#seLocomoveEm"/>
+            <Class IRI="#Rota"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TransportePublico"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#podePararEm"/>
@@ -172,13 +203,6 @@
                 <Class IRI="#Rua"/>
                 <Class IRI="#Terminal"/>
             </ObjectUnionOf>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TransportePublico"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#seLocomoveEm"/>
-            <Class IRI="#Rota"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
 </Ontology>
