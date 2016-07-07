@@ -1,7 +1,7 @@
 # Ontologies
 
-Ontology for public transportation domain modeled in Protégé <http://protege.stanford.edu/>.
-transportationJourneyPlanner.owl
+Ontology for public transportation domain modeled in Protégé (<http://protege.stanford.edu/>).
+<br />transportationJourneyPlanner.owl
 
 Mapped classes:
 
