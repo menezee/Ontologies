@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1466693504489" name="http://owl.man.ac.uk/2006/07/sssw/people" uri="people.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1466693504489" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="pizza.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1466693504489" name="http://www.semanticweb.org/administrador/ontologies/2016/5/untitled-ontology-11" uri="transportationJourneyPlanner.owl"/>
-    </group>
-</catalog>

@@ -1,92 +1,138 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/administrador/ontologies/2016/5/untitled-ontology-11"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/administrador/ontologies/2016/5/untitled-ontology-11">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/administrador/ontologies/2016/5/untitled-ontology-11"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#Adulto"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#Bicicleta"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Calçada"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CorredorDeOnibus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HorariosDoOnibus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Idoso"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lotação"/>
+        <Class IRI="#Adulto"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Onibus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Passageiro"/>
+        <NamedIndividual IRI="#Bicicleta_1"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PontoDeLotação"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PontoDeOnibus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PontoDeTaxi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rota"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rua"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taxi"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Terminal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Timetable"/>
+        <NamedIndividual IRI="#Onibus_3_(Docs_vencidos)"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TransportePublico"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Taxi_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passageiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idoso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Corredor_de_ônibus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PontoDeLotação"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ponto_de_ônibus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lotação_1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temLugarDisponivel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rota"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calçada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terminal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ponto_de_táxi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Onibus_2_(Lotado)"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#podePararEm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Calçada1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#podeSerMultado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#éPassageiroPreferencial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#documentosEstãoVencidos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorredorDeOnibus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jack_Bauer_(Adulto)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Onibus_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lotação"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#podeAndarDe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PontoDeOnibus"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#seLocomoveEm"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#transportePassaEm"/>
+        <NamedIndividual IRI="#Jack_Sparrow_(Idoso)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PontoDeTaxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rua_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ponto_de_lotação"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Adulto"/>
         <Class IRI="#Passageiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adulto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#podeAndarDe"/>
+            <Class IRI="#TransportePublico"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bicicleta"/>
@@ -108,15 +154,32 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CorredorDeOnibus"/>
-        <Class IRI="#Rua"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HorariosDoOnibus"/>
-        <Class IRI="#Timetable"/>
+        <Class IRI="#Rota"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Idoso"/>
         <Class IRI="#Passageiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idoso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#podeAndarDe"/>
+            <Class IRI="#Lotação"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idoso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#podeAndarDe"/>
+            <Class IRI="#Onibus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idoso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#podeAndarDe"/>
+            <Class IRI="#Taxi"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lotação"/>
@@ -148,19 +211,26 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Passageiro"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#podeAndarDe"/>
+            <Class IRI="#TransportePublico"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passageiro"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#éPassageiroPreferencial"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PontoDeLotação"/>
         <Class IRI="#Terminal"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PontoDeOnibus"/>
         <Class IRI="#Terminal"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PontoDeOnibus"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#transportePassaEm"/>
-            <Class IRI="#HorariosDoOnibus"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PontoDeTaxi"/>
@@ -182,10 +252,23 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Terminal"/>
+        <Class IRI="#TransportePublico"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#podePararEm"/>
+                <Class IRI="#Terminal"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#podePararEm"/>
+                <Class IRI="#Rua"/>
+            </ObjectAllValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportePublico"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#transportePassaEm"/>
-            <Class IRI="#Timetable"/>
+            <ObjectProperty IRI="#podeSerMultado"/>
+            <Class IRI="#TransportePublico"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -197,17 +280,359 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TransportePublico"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#podePararEm"/>
-            <ObjectUnionOf>
-                <Class IRI="#Rua"/>
-                <Class IRI="#Terminal"/>
-            </ObjectUnionOf>
-        </ObjectAllValuesFrom>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#temLugarDisponivel"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Adulto"/>
+        <Class IRI="#Idoso"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Bicicleta"/>
+        <NamedIndividual IRI="#Bicicleta_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Calçada"/>
+        <NamedIndividual IRI="#Calçada1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorredorDeOnibus"/>
+        <NamedIndividual IRI="#Corredor_de_ônibus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lotação"/>
+        <NamedIndividual IRI="#Lotação_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Onibus"/>
+        <NamedIndividual IRI="#Onibus_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PontoDeLotação"/>
+        <NamedIndividual IRI="#Ponto_de_lotação"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PontoDeTaxi"/>
+        <NamedIndividual IRI="#Ponto_de_táxi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PontoDeOnibus"/>
+        <NamedIndividual IRI="#Ponto_de_ônibus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rua"/>
+        <NamedIndividual IRI="#Rua_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Taxi"/>
+        <NamedIndividual IRI="#Taxi_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adulto"/>
+        <NamedIndividual IRI="#Jack_Bauer_(Adulto)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idoso"/>
+        <NamedIndividual IRI="#Jack_Sparrow_(Idoso)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Onibus"/>
+        <NamedIndividual IRI="#Onibus_2_(Lotado)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Onibus"/>
+        <NamedIndividual IRI="#Onibus_3_(Docs_vencidos)"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temLugarDisponivel"/>
+        <NamedIndividual IRI="#Lotação_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temLugarDisponivel"/>
+        <NamedIndividual IRI="#Onibus_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temLugarDisponivel"/>
+        <NamedIndividual IRI="#Taxi_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#éPassageiroPreferencial"/>
+        <NamedIndividual IRI="#Jack_Sparrow_(Idoso)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temLugarDisponivel"/>
+        <NamedIndividual IRI="#Onibus_2_(Lotado)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#documentosEstãoVencidos"/>
+        <NamedIndividual IRI="#Onibus_3_(Docs_vencidos)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temLugarDisponivel"/>
+        <NamedIndividual IRI="#Onibus_3_(Docs_vencidos)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#podeAndarDe"/>
+        <Class IRI="#Passageiro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#podePararEm"/>
+        <Class IRI="#TransportePublico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#podeSerMultado"/>
+        <Class IRI="#TransportePublico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seLocomoveEm"/>
+        <Class IRI="#TransportePublico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#podeAndarDe"/>
+        <Class IRI="#TransportePublico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#podePararEm"/>
+        <Class IRI="#Rua"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#podePararEm"/>
+        <Class IRI="#Terminal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#podeSerMultado"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#documentosEstãoVencidos"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seLocomoveEm"/>
+        <Class IRI="#Rota"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Adulto"/>
+                <Variable IRI="urn:swrl#a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Bicicleta"/>
+                <Variable IRI="urn:swrl#b"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podeAndarDe"/>
+                <Variable IRI="urn:swrl#a"/>
+                <Variable IRI="urn:swrl#b"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Bicicleta"/>
+                <Variable IRI="urn:swrl#h"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Calçada"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#seLocomoveEm"/>
+                <Variable IRI="urn:swrl#h"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Onibus"/>
+                <Variable IRI="urn:swrl#b"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#CorredorDeOnibus"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#seLocomoveEm"/>
+                <Variable IRI="urn:swrl#b"/>
+                <Variable IRI="urn:swrl#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Idoso"/>
+                <Variable IRI="urn:swrl#i"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Onibus"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#temLugarDisponivel"/>
+                <Variable IRI="urn:swrl#o"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#éPassageiroPreferencial"/>
+                <Variable IRI="urn:swrl#i"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podeAndarDe"/>
+                <Variable IRI="urn:swrl#i"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Lotação"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PontoDeLotação"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podePararEm"/>
+                <Variable IRI="urn:swrl#l"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Passageiro"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Onibus"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#temLugarDisponivel"/>
+                <Variable IRI="urn:swrl#o"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podeAndarDe"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Onibus"/>
+                <Variable IRI="urn:swrl#o"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PontoDeOnibus"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podePararEm"/>
+                <Variable IRI="urn:swrl#o"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TransportePublico"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#temLugarDisponivel"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Passageiro"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podeAndarDe"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Taxi"/>
+                <Variable IRI="urn:swrl#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#PontoDeTaxi"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podePararEm"/>
+                <Variable IRI="urn:swrl#t"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TransportePublico"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#documentosEstãoVencidos"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#podeSerMultado"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 
